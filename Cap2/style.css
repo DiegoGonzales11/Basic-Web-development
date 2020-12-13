@@ -1,0 +1,26 @@
+/* 
+referencia con palabra clave 
+se usan las letras de las etiquetas
+*/
+/*
+p {font-size: 20px}
+li {font-size: 20px}
+*/
+
+/*
+referencia por id
+siempre con #
+id es unica
+*/
+#texto1 {font-size: 20px}
+
+/* 
+referencia con el atributo class 
+la clase se puede repetir en muchos elementos
+*/
+.texto2 {font-size: 20px}
+/* 
+clase q aparte de necesitar q el elemento 
+tenga la clase, tiene q ser de tipo <p>
+*/
+p.texto3 {font-size: 20px}
