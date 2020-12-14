@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Prueba1" content="Mi primera pagina web">
+    <title>Prueba1</title>
+    <link rel="stylesheet" href="./plantilla_style.css">
+</head>
+<body>
+    <div id="agrupar">
+        <!-- header es para titulos -->
+        <header id="cabecera">
+            <h1>Este es el titulo de mi pagina</h1>
+        </header>    
+        <!-- barra de navegacion -->
+        <nav id="menu">
+            <!-- lista de elementos -->
+            <ul>
+                <!-- elementos  -->
+                <li>Principal</li>
+                <li>Fotos</li>
+                <li>Videos</li>
+                <li>Contactos</li>
+            </ul>
+        </nav>
+        <!-- contenido central -->
+        <section id="seccion">
+            <!-- article para separar unidades independientes de contenido -->
+            <article>
+                <!-- tienen su propia estructura -->
+                <header>
+                    <h2>Titulo del mensaje uno</h2>
+                    <h3>Subtitulo del mensaje uno</h3>
+                    <p class="time">publicado 12/12/2020</p>
+                </header>
+                Este es el texto del primer mensaje
+                <!-- insertar figuras -->
+                <figure>
+                    <img src="./images/gato.jpg" width="600" height="350" alt="mesaje por si no carga la foto">
+                    <caption>
+                        Esta es la imagen del primer mensaje
+                    </caption>
+                </figure>
+                <footer>
+                    <!-- p para parrafos -->
+                    <p>comentarios (0)</p>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h2>Titulo del mensaje dos</h2>
+                    <h3>Subtitulo del mensaje dos</h3>
+                    <p class="time">publicado 13/12/2020</p>
+                </header>
+                Este es el texto del segundo mensaje
+                <footer>
+                    <p>comentarios (0)</p>
+                </footer>
+            </article>
+        </section>
+        <!-- contenido relacionado al principal pero menos importante -->
+        <aside id="columna">
+            <!-- blockquote se usa para citas -->
+            <blockquote>Mensaje numero uno</blockquote>
+            <blockquote>Mensaje numero dos</blockquote>
+        </aside>
+        <!-- pie de pagina -->
+        <footer id="pie">
+            Derechos Reservados &copy; 2020
+        </footer>
+    </div>
+</body>
+</html>
