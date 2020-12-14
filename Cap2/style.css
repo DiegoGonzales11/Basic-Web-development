@@ -24,3 +24,46 @@ clase q aparte de necesitar q el elemento
 tenga la clase, tiene q ser de tipo <p>
 */
 p.texto3 {font-size: 20px}
+
+/* para referenciar con cualquier atributo */
+/* cualquier <p> con atributo name */
+p[name] {font-size: 20px}
+/* especificando el valor del atributo */
+p[name="mitexto"] {font-size: 20px}
+/* tambien acepta Expresiones Regulares */
+p[name^="mi"] {font-size: 20px}
+p[name$="mi"] {font-size: 20px}
+p[name*="mi"] {font-size: 20px}
+
+/* pseudo clases */
+/* 
+para los <p>, :nth-child(#) encuentra el numero de 
+hijo especifico,
+tambien se pueden usar las palabras "odd" y "even"
+en lugar del numero, hay mas tipos de child, son 
+igual de intuitivos
+*/
+p:nth-child(1){
+    background: #999999;
+}
+p:nth-child(2){
+    background: #cccccc;
+}
+p:nth-child(3){
+    background: #999999;
+}
+p:nth-child(4){
+    background: #cccccc;
+}
+/* representa a todos los elementos */
+*{
+    margin: 0px;
+}
+
+/* 
+afecta a todas las etiquetas q no esten
+dentro del not, en este caso es <p>
+*/
+:not(p){
+    margin: 0px;
+}
